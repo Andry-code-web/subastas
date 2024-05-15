@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const subastasRoutes = require('./router/subastasRouter');
 const sequelize = require('./config/database');
 const { error } = require('console');
 
@@ -13,6 +15,14 @@ app.set('view engine', "ejs")
 app.set('views', path.join(__dirname, 'src/views'))
 app.use(express.static('public'));
 app.use(morgan('dev'));
+
+//ruatas
+app.use('/subastas', subastasRoutes)
+
+
+app.get('/', (req, res) => {
+    res.send('Bienvenido  a la api de subasta')
+})
 
 //Sincronizar la base de datos
 sequelize.sync()
