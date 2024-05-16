@@ -17,7 +17,7 @@ const AdminGeneral = sequelize.define('AdminGeneral', {
     }
 },{
     tableName: 'admingeneral',
-    timestamps: flase
+    timestamps: false
 });
 
 module.exports = AdminGeneral;

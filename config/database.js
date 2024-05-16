@@ -11,11 +11,11 @@ const sequelize = new Sequelize(
     }
 );
 
-const Usuario = require('../model/usuarios');
+/* const Usuario = require('../model/usuarios');
 const Subasta = require('../model/subastas');
 const AdminGeneral = require('../model/adminGeneral');
 const AdminVendedor = require('../model/adminVendor');
-const Oferta = require('../model/ofertas');
+const Oferta = require('../model/ofertas'); */
 
 sequelize.authenticate()
     .then(() => {
