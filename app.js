@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const subastasRoutes = require('./router/subastasRouter');
 const usuariosRoutes = require('./router/usuarioRouter');
 const adminGeneralRoutes = require('./router/adminGeneralRouter');
+const adminVendedorRoutes = require('./router/adminVendorRouter');
+const ofertaRoutes = require('./router/ofertaRouter');
 const sequelize = require('./config/database');
 
 const app = express();
@@ -28,7 +30,9 @@ app.get('/subasta', (req, res) => {
 app.get('/AGeneral', (req, res) =>{
     res.render('adminGeneral'); // Renderizará la vista adminGeneral.ejs
 })
-
+app.get('/AVendedor', (req, res) => {
+    res.render('adminVendedor'); // Renderizará la vista adminVendedor.ejs
+})
 
 /* Rutas depeticiones a la RUTAS */
 
@@ -38,6 +42,10 @@ app.use('/usuarios', usuariosRoutes);
 app.use('/subasta', subastasRoutes);
 //Rutas de admin General
 app.use('/adminGeneral', adminGeneralRoutes);
+//Rutas de admin Vendedor
+app.use('/adminVendedor', adminVendedorRoutes);
+//Rutas de ofrtas
+app.use('/ofertas', ofertaRoutes);
 
 
 // Sincronizar la base de datos

@@ -1,5 +1,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
+const AdminGeneral = require('./adminGeneral');
 
 const AdminVendedor = sequelize.define('AdminVendedor', {
     id: {
@@ -15,11 +16,11 @@ const AdminVendedor = sequelize.define('AdminVendedor', {
         }
     },
     nombre_usuario: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
     contraseña: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     }
 },{

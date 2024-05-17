@@ -42,7 +42,7 @@ exports.obtenerSubastaPorId = async ( req, res) => {
     }
 }
 
-/* ACTUALIAR */
+/* ACTUALIzAR */
 exports.actualizarSubasta = async (req, res) => {
     try {
         const subasta = await Subasta.findByPk(req.params.id);

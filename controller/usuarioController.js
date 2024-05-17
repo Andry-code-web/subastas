@@ -1,3 +1,4 @@
+const path = require('path');
 const Usuario = require('../model/usuarios');
 
 /* OBTENER */
@@ -6,9 +7,7 @@ exports.obtenerUsuario = async (req, res) => {
         const usuarios = await Usuario.findAll();
         res.status(200).json(usuarios);
     } catch (error) {
-        res.status(400).json({
-            error: error.message
-        });
+        res.status(400).sendFile(path.join(__dirname, '../views/errores_Http/400.html'));
     }
 };
 
