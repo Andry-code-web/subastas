@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/slyle_register.css">
+  <title>Registro</title>
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <div class="imagen">
+      <img src="/public/img/imagen_login.svg" alt="">
+    </div>
+    <div class="fondo">
+      <div class="content_form">
+        <h2>Regístrate</h2>
+        <form action="/usuarios" method="POST">
+          <div class="linea">
+            <div class="inputs">
+              <label for="nombre">Nombre*</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="inputs">
+              <label for="apellidos">Apellidos*</label>
+              <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos" required>
+            </div>
+
+          </div>
+          <div class="linea">
+            <div class="inputs">
+              <label for="dni">DNI*</label>
+              <input type="text" name="dni" id="dni" placeholder="Ingresa tu DNI" required>
+            </div>
+
+            <div class="inputs">
+              <label for="celular">Celular*</label>
+              <input type="text" name="celular" id="celular" placeholder="Ingresa tu celular" required>
+            </div>
+          </div>
+          <div class="linea">
+            <div class="inputs">
+              <label for="correo_electronico">Correo Electrónico*</label>
+              <input type="email" name="correo_electronico" id="correo_electronico" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="inputs">
+              <label for="contraseña">Contraseña*</label>
+              <input type="password" name="contraseña" id="contraseña" placeholder="Ingresa tu contraseña" required>
+            </div>
+          </div>
+
+          <div class="lineas">
+            <p>Quiero recibir:</p>
+            <div class="content_check">
+              <div class="recibo">
+                <label for="">Boleta</label>
+                <input type="checkbox" name="boleta" >
+              </div>
+              <div class="recibo">
+                <label for="">Factura</label>
+                <input type="checkbox" name="factura">
+                <input type="text" name="ruc" placeholder="RUC">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="terminos">
+            <p>Importante:</p>
+            <div class="content_infor">
+              <ul>
+                <li>
+                  Debes leer nuestras
+                  <span>
+                    <a href="">Condiciones y terminos</a>
+                  </span>
+                  antes de registrarte.
+                </li>
+                <li>
+                  Tu DNI es obligatorio en todo proceso de compra - venta
+                </li>
+              </ul>
+            </div>
+            <div class="content_ckec_info">
+              <div class="terminoss">
+                <input type="checkbox" name="" id="">
+                <label for="">
+                  He le ido y acepto los
+                  <span>
+                    <a href="">terminos y condiciones</a>
+                  </span>
+                  de uso del servicio
+                </label>
+              </div>
+              <div class="terminoss">
+                <input type="checkbox" name="" id="">
+                <label for="">
+                  He leido y acepto el usu de los Datos Personales
+                </label>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+          <button type="submit">Registrar</button>
+          <p>
+            <span>Ya tienes una cuenta?</span>
+            <span>
+              <a href="">Login</a>
+            </span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

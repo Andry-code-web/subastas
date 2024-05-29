@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Sedan:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+:root{
+    --font--banner--semi: url("/public/fonts/segoeuithis.ttf");
+    --font--banner--bool: url("/public/fonts/segoeuithibd.ttf");
+    --font--parrafo: "Space Mono";
+    --font--header: "Sedan";
+    --font--testimoni: "Modern Antiqua";
+    --font--about: "BioRhyme";
+    --font--cont: "Scope One";
+    --color--label: #989898;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    left: 8%;
+}
+
+.regreso{
+    margin-left: 3rem;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/img/color_fondo_login.svg");
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+.content_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.content_form h2{
+    font-family: var(--font--about);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.content_form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content_form form .linea label{
+    font-size: .9rem;
+    font-family: var(--font--header);
+    color: var(--color--label);
+}
+
+.content_form form .linea input{
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content_form form input:focus{
+    outline: none;
+}
+
+.content_form form input::placeholder{
+    color: #acacac;
+}
+
+.content_form form button{
+    width: 40%;
+    height: 40px;
+    background-color: #ED5544;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-family: var(--font--testimoni);
+    margin-top: 1rem;
+}
+
+
+
+.content_form form p span a{
+    text-decoration: none;
+    color: #ED5544;
+    font-weight: 800;
+}
+
+.linea{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.lineas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content_check{
+    display: flex;
+}
+
+.recibo{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.recibo input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-appearance: none; /* Para Safari y Chrome */
+    -moz-appearance: none;    /* Para Firefox */
+    appearance: none;         /* Para otros navegadores */
+    border: 1px solid black;  /* Borde del checkbox */
+    cursor: pointer;
+    margin-right: 1rem;
+
+}
+
+.recibo input[name="ruc"]{
+    height: 40px;
+    width: 290px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 1rem;
+}
+
+.recibo label{
+    font-size: 1.2rem;
+    font-family: var(--font--parrafo);
+}
+
+.content_form form .lineas p{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    /* font-family: var(--font--about); */
+}
+
+.terminos{
+    width: 100%;
+}
+
+.terminos p{
+    font-size: 1.4rem;
+}
+
+.terminos .content_infor{
+    width: 90%;
+}
